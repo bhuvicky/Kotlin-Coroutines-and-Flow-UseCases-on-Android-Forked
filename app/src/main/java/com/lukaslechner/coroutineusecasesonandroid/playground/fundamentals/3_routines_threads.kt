@@ -2,6 +2,12 @@ package com.lukaslechner.coroutineusecasesonandroid.playground.fundamentals
 
 import kotlin.concurrent.thread
 
+/*
+* BLOCKING SCENARIO
+* While the three threads (main, thread1, thread2) are sleeping they can't work on other tasks.
+* This occupies the CPU with unnecessary waiting time.
+*
+* */
 fun main() {
     println("main starts")
     threadRoutine(1, 500)

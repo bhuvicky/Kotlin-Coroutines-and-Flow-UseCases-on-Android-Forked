@@ -5,12 +5,13 @@ apply plugin: 'kotlin-parcelize'
 
 android {
 
-    compileSdkVersion 34
+    compileSdk 34
     defaultConfig {
         applicationId "com.lukaslechner.coroutineusecasesonandroid"
         versionCode 1
         versionName "1.0"
-        minSdk 26
+        minSdk 29
+        targetSdk 34
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
